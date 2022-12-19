@@ -1,0 +1,73 @@
+body{
+width: 100%;
+background-image:url(images/books.jpg) ;
+}
+
+.container-fluid{
+  
+    opacity: 1;text-align: center;
+}
+.container-fluid img{
+    height: 100px;
+    width: 100px;
+}
+form{
+   margin: 5% 7%;
+   
+}
+input{
+width: 50%;
+height: 33px;
+margin: 5px 0;
+border-radius: 5px;
+border: 1px solid grey;
+}
+
+.options{
+    display: flex;
+    justify-content: end;
+    z-index: 3;
+}
+.hidden{
+    display: none;
+}
+.blur{
+    opacity: 0.1;
+}
+
+.edit{
+    background-color: rgb(2, 247, 255) !important;
+   border: none;
+
+}
+
+.delete{
+    background-color:red !important;
+    color: white !important;
+    border: none;
+}
+
+@media(max-width:650px){
+    .container-fluid{
+        flex-direction: column;
+        width: 182%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container{
+        width: 350px !important;
+    }
+
+    .formAlignment{
+        width: 75%;
+        margin: 0 auto;
+    }
+    input{
+        width: 100%;
+    }
+    /* .table{
+        width: 300px !important;
+
+    } */
+}

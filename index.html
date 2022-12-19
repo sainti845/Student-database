@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GBPUAT library</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container-fluid d-flex bg-secondary  justify-content-evenly">
+      <img src="images/gbpuat.png" class="img-fluid flex-start" alt="" />
+      <h1 class="display-5 text-white my-auto">
+        GBPUAT STUDENT DATABASE SYSTEM
+      </h1>
+      <button class="btn px-3 view bg-primary text-white h-50 my-auto">
+        View
+      </button>
+      <button class="btn px-3 bg-success text-white create h-50 my-auto">
+        Create
+      </button>
+      <button class="btn px-3 bg-danger text-white clear h-50 my-auto">
+        Clear All
+      </button>
+    </div>
+
+    <div class="formAlignment">
+    <div class="form h-75 w-100 hidden">
+      <form class="text-white" id="myForm">
+        <label class="d-block" for="student-firstname">FIRST NAME</label>
+        <input
+          type="text"
+          name="student-firstname"
+          required
+          id="student-firstname"
+        />
+        <label class="d-block" for="student-lastname">LAST NAME</label>
+        <input
+          type="text"
+          name="student-lastname"
+          required
+          id="student-lastname"
+        />
+        <label class="d-block" for="student-id">ID NUMBER </label
+        ><input type="text" name="student-id" id="student-id" required />
+        <label class="d-block" for="student-department">DEPARTMENT </label
+        ><input
+          type="text"
+          name="student-department"
+          id="student-department"
+          required
+        />
+        <label class="d-block" for="student-section">SECTION</label
+        ><input
+          type="text"
+          name="student-section"
+          id="student-section"
+          required
+        />
+        <label class="d-block" for="student-year">YEAR </label
+        ><input type="number" name="student-year" id="student-year" required />
+        <button type="submit" class="btn btn-outline-info confirm d-block my-3">
+          CONFIRM
+        </button>
+      </form>
+    </div>
+  </div>
+    <div class="options hide text-white hidden">
+      <ul class="text-decoration-none list-group w-25">
+        <button class="btn list-group-item">Home</button>
+        <button class="list-group-item">Account</button>
+        <button class="list-group-item">Transactions</button>
+        <button class="list-group-item">Books</button>
+        <button class="list-group-item">Category</button>
+      </ul>
+    </div>
+    <div class="container  hide my-5">
+      <!-- <table class="table table-striped table-dark text-white ">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First NAME</th>
+            <th scope="col">Last NAME</th>
+            <th scope="col">ID NUMBER</th>
+            <th scope="col">DEPARTMENT</th>
+            <th scope="col">SECTION</th>
+            <th scope="col">YEAR</th>
+          </tr>
+        </thead>
+        <tbody class=" ">
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table> -->
+      <table class="table text-white bg-success" id="show">
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>ID NUMBER</th>
+          <th>DEPARTMENT</th>
+          <th>SECTION</th>
+          <th>YEAR</th>
+          <th>EDIT</th>
+          <th>DELETE</th>
+        </tr>
+      </table>
+    </div>
+
+    <div class="empty hidden">
+      <h1 class="display-5 w-50 mx-auto text-center text-white opacity-75">
+        TABLE IS CURRENTLY EMPTY. PLEASE FILL IT USING THE CREATE BUTTON.✨✨
+      </h1>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
